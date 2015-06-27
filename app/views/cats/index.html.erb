@@ -1,0 +1,9 @@
+<div class="page-header">
+  <%= link_to "create cat", new_cat_path, class: 'btn btn-primary pull-right' %> 
+  <h1>Hello cats</h1>
+</div>
+
+<% @cats.each do |cat| %>
+  <p>This cats name is <%= link_to cat.name, cat_path(cat) %></p>
+  <hr>
+<% end %>

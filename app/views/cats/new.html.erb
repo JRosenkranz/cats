@@ -1,0 +1,8 @@
+<h1>created a new cat</h1>
+
+<%= simple_form_for @cat do |f| %>
+  <%= f.input :name, required: false %>
+  <%= f.input :color %>
+  <%= f.input :date_of_birth %>
+  <%= f.submit 'Save cat', class: 'btn btn-lg btn-success' %>
+<% end %>
